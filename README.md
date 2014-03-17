@@ -53,9 +53,12 @@ Version:
   1.3                                      // developed on 14/11/2013
 
 Mixins:
-  @ min-screen(width)                      // shortcut for @media screen and (min-width ...)
-  @ max-screen(width)                      // shortcut for @media screen and (max-width ...)
-  @ screen(min-width, max-width)           // shortcut for @media screen and (min-width ...) and (max-width ...)
+  @ min-screen(width)                           // shortcut for @media screen and (min-width ...)
+  @ min-screen(width, orientation)              // shortcut for @media screen and (min-width ...) and (orientation ....)
+  @ max-screen(width)                           // shortcut for @media screen and (max-width ...)
+  @ max-screen(width, orientation)              // shortcut for @media screen and (max-width ...) and (orientation ....)
+  @ screen(min-width, max-width)                // shortcut for @media screen and (min-width ...) and (max-width ...)
+  @ screen(min-width, max-width, orientation)   // shortcut for @media screen and (min-width ...) and (max-width ...) and (orientation ....)
   ---
   @ min-screen-height(height)              // shortcut for @media screen and (min-height ...)
   @ max-screen-height(height)              // shortcut for @media screen and (max-height ...)
